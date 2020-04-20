@@ -26,7 +26,7 @@
 #include <android-base/file.h>
 #include <android-base/stringprintf.h>
 #include <android-base/unique_fd.h>
-#include <fs_mgr.h>
+#include <fstab/fstab.h>
 
 #ifdef USE_OLD_BOOTLOADER_MESSAGE
 #include <sys/system_properties.h>

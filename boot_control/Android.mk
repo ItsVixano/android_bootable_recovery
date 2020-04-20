@@ -25,9 +25,10 @@ LOCAL_CFLAGS := \
   -Werror \
   -Wall \
   -Wextra
-LOCAL_SHARED_LIBRARIES := liblog
-LOCAL_STATIC_LIBRARIES := libbootloader_message libfs_mgr libbase
+LOCAL_SHARED_LIBRARIES := libhardware libbase liblog
+LOCAL_STATIC_LIBRARIES := libbootloader_message_vendor libfstab
+LOCAL_VENDOR_MODULE := true
 LOCAL_POST_INSTALL_CMD := \
-  $(hide) mkdir -p $(TARGET_OUT_SHARED_LIBRARIES)/hw && \
-  ln -sf bootctrl.bcb.so $(TARGET_OUT_SHARED_LIBRARIES)/hw/bootctrl.default.so
+  $(hide) mkdir -p $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw && \
+  ln -sf bootctrl.bcb.so $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/hw/bootctrl.default.so
 include $(BUILD_SHARED_LIBRARY)
