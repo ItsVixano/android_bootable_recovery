@@ -119,6 +119,11 @@ int main(int argc, char **argv) {
 	DataManager::SetDefaultValues();
 	printf("Starting the UI...\n");
 	gui_init();
+	// Print some information
+	gui_print("|||   Team Win Recovery Project   |||\n");
+	gui_print("| Release Version : %s\n", TW_VERSION_STR);
+	gui_print("| Build Status    : Unofficial\n"); // This source won't be official anyways but this "indicator" can help people differentiate it from the official TWRP
+	gui_print("\n");
 	printf("=> Linking mtab\n");
 	symlink("/proc/mounts", "/etc/mtab");
 	std::string fstab_filename = "/etc/twrp.fstab";
