@@ -933,6 +933,15 @@ int TWPartitionManager::Run_Backup(bool adbbackup) {
 		backup_path = Backup_List.substr(start_pos, end_pos - start_pos);
 		part_settings.Part = Find_Partition_By_Path(backup_path);
 		if (part_settings.Part != NULL) {
+			if ((strstr(backup_path.c_str(), "/storage")) || (strstr(backup_path.c_str(), "/data/media/0")))
+			{
+				if (strstr(part_settings.Backup_Folder.c_str(), "data/media/0"))
+				{
+					gui_err("internal_backup_fatal_i1=FATAL ERROR! You cannot backup Internal Storage onto itself!");
+					gui_err("internal_backup_fatal_i2=You MUST change the backup destination to MicroSD/USB-OTG.");
+					return false;
+				}
+			}
 			if (!Backup_Partition(&part_settings))
 				return false;
 		} else {

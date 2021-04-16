@@ -76,7 +76,7 @@
 		<variable name="tw_hide_kb" value="0"/>
 		<variable name="screen_width" value="1080"/>
 		<variable name="screen_height" value="1920"/>
-		<variable name="status_height" value="60"/>
+		<variable name="status_height" value="96"/>
 		<variable name="header_height" value="256"/>
 		<variable name="navbar_height" value="130"/>
 		<variable name="content_width" value="1008"/>
@@ -276,7 +276,7 @@
 
 			<text color="%text_color%">
 				<font resource="font_m"/>
-				<placement x="%center_x%" y="%row1_header_y%" placement="5"/>
+				<placement x="1010" y="%row1_header_y%" placement="1"/>
 				<text>%tw_time%</text>
 			</text>
 
@@ -287,7 +287,7 @@
 					<condition var1="tw_battery" op="&lt;" var2="101"/>
 				</conditions>
 				<font resource="font_m"/>
-				<placement x="%indent_right%" y="%row1_header_y%" placement="1"/>
+				<placement x="200" y="%row1_header_y%" placement="5"/>
 				<text>{@battery_pct=Battery: %tw_battery%}</text>
 			</text>
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <language>
-	<display>Русский</display>
+	<display>Русский мал шрифт</display>
 	<!-- Translated by Jemmini; modified by agur4ik, SevenMaxs, S-trace 2017 -->
 
 	<resources>
 		<!-- Font overrides - only change these if your language requires special characters -->
-		<resource filename="RobotoCondensed-Regular.ttf" name="font_l" scale="90" type="fontoverride"/>
-		<resource filename="RobotoCondensed-Regular.ttf" name="font_m" scale="90" type="fontoverride"/>
-		<resource filename="RobotoCondensed-Regular.ttf" name="font_s" scale="90" type="fontoverride"/>
+		<resource filename="RobotoCondensed-Regular.ttf" name="font_l" scale="80" type="fontoverride"/>
+		<resource filename="RobotoCondensed-Regular.ttf" name="font_m" scale="80" type="fontoverride"/>
+		<resource filename="RobotoCondensed-Regular.ttf" name="font_s" scale="80" type="fontoverride"/>
 		<resource filename="DroidSansMono.ttf" name="fixed" scale="100" type="fontoverride"/>
 		<!-- Partition display names -->
 		<string name="system">System</string>
@@ -172,14 +172,14 @@
 		<string name="resize_complete">Размер раздела изменён</string>
 		<string name="swipe_resize">Свайп для изменения размера</string>
 		<string name="swipe_resize_s">   Измен. размер</string>
-		<string name="repair_btn">Восст-ть фс</string>
+		<string name="repair_btn">Восст-ть файл. систему</string>
 		<string name="repair_btn_s">Восстановление</string>
 		<string name="repair_confirm">Восстановить %tw_partition_name%?</string>
 		<string name="repairing">Восстановление...</string>
 		<string name="repair_complete">Восстановление завершено</string>
 		<string name="swipe_repair">Свайп для восстановления</string>
 		<string name="swipe_repair_s">   Восстановление</string>
-		<string name="change_fs_btn">Изменить ФС</string>
+		<string name="change_fs_btn">Изм. файловую систему</string>
 		<string name="change_fs_btn_s">Измен. ФС</string>
 		<string name="change_fs_for_hdr">Изменить файловую систему для %tw_partition_name%</string>
 		<string name="change_fs_for_hdr_s">Раздел: %tw_partition_name% &gt; Select File System</string>
@@ -375,7 +375,7 @@
 		<string name="file_manager_btn">Проводник</string>
 		<string name="language_hdr">Язык</string>
 		<string name="terminal_btn">Терминал</string>
-		<string name="reload_theme_btn">Перезагрузить тему</string>
+		<string name="reload_theme_btn">Ребут темы</string>
 		<string name="dumlock_btn">HTC Dumlock</string>
 		<string name="inject_twrp_btn">Интегрировать TWRP</string>
 		<string name="inject_twrp_confirm">Интегрировать TWRP заново?</string>
@@ -461,7 +461,7 @@
 		<string name="fix_contexts_note2">Исправление SELinux-контекста может привести</string>
 		<string name="fix_contexts_note3">к тому, что система не будет запускаться.</string>
 		<string name="swipe_to_fix_contexts">Свайп для исправлен. контекста</string>
-		<string name="swipe_fix_contexts">Фикс контекст</string>
+		<string name="swipe_fix_contexts">   Исправить контекст</string>
 		<string name="fixing_contexts">Исправление контекста...</string>
 		<string name="fix_contexts_complete">Исправление контекста завершено</string>
 		<string name="reboot_hdr">Перезагрузка</string>
